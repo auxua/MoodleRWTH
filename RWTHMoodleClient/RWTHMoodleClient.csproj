@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Arno Schmetz</Authors>
+    <Company></Company>
+    <Product />
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Description>Basic portable API Client for RWTH Moodle including Authentication Management via OAuth 2
+
+Currently, the API only supports
+ * Course enrollment listing
+ * File Listing and Download</Description>
+    <Copyright>Arno Schmetz</Copyright>
+    <PackageTags>RWTH Moodle</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Y:\Repos\RWTHMoodle\RWTHMoodleClient\RWTHMoodleClient.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>
