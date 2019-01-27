@@ -4,16 +4,20 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Arno Schmetz</Authors>
     <Company></Company>
-    <Product />
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Product>auxua.RWTHMoodleClient</Product>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Basic portable API Client for RWTH Moodle including Authentication Management via OAuth 2
 
 Currently, the API only supports
  * Course enrollment listing
  * File Listing and Download</Description>
     <Copyright>Arno Schmetz</Copyright>
-    <PackageTags>RWTH Moodle</PackageTags>
+    <PackageTags>RWTH Moodle auxua</PackageTags>
+    <RootNamespace>auxua.RWTHMoodleClient</RootNamespace>
+    <PackageLicenseUrl>https://github.com/auxua/MoodleRWTH/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/auxua/MoodleRWTH</PackageProjectUrl>
+    <PackageId>auxua.RWTHMoodleClient</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RWTHMoodleClient
+namespace auxua.RWTHMoodleClient
 {
 #pragma warning disable IDE1006 // Name Style | Provided by API Reference
 #pragma warning disable CS1591 // Missing XML Doc | provided by API Reference

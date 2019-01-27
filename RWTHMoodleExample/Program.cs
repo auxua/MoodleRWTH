@@ -4,6 +4,8 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 
+using auxua;
+
 namespace RWTHMoodleExample
 {
     class Program
@@ -14,11 +16,11 @@ namespace RWTHMoodleExample
 
             Console.WriteLine("Start Configuration");
             // Set your ClientID here
-            RWTHMoodleClient.Config.ClientID = "";
+            auxua.RWTHMoodleClient.Config.ClientID = "XXX.apps.rwth-aachen.de";
             
             Console.WriteLine("Starting Authentication Process");
             // Get URL for Authentication (OAuth2)
-            string url = await RWTHMoodleClient.AuthenticationManager.StartAuthenticationProcess();
+            string url = await auxua.RWTHMoodleClient.AuthenticationManager.StartAuthenticationProcess();
             // Present Web to user (ITC RWTH requires you to user system web browser instead of own webview)
 
             // Traditional approach (e.g. Mono/.NET - use Process.Start directly)
@@ -38,9 +40,9 @@ namespace RWTHMoodleExample
             {
                 // Just wait 5 seconds - this is the recommended querying time for OAuth by ITC
                 Thread.Sleep(5000);
-                await RWTHMoodleClient.AuthenticationManager.CheckAuthenticationProgress();
+                await auxua.RWTHMoodleClient.AuthenticationManager.CheckAuthenticationProgress();
 
-                done = (RWTHMoodleClient.AuthenticationManager.State == RWTHMoodleClient.AuthenticationManager.AuthenticationState.ACTIVE);
+                done = (auxua.RWTHMoodleClient.AuthenticationManager.State == auxua.RWTHMoodleClient.AuthenticationManager.AuthenticationState.ACTIVE);
 
                 if (!done)
                 {
@@ -57,14 +59,14 @@ namespace RWTHMoodleExample
 
             Console.WriteLine("Calling API");
             // Getting List of current Course rooms in Moodle
-            RWTHMoodleClient.MoodleEnrolledCoursesResponse result = await RWTHMoodleClient.Api.RESTClient.MoodleGetEnrolledCourses();
+            auxua.RWTHMoodleClient.MoodleEnrolledCoursesResponse result = await auxua.RWTHMoodleClient.Api.RESTClient.MoodleGetEnrolledCourses();
 
             // Use Result
             foreach (var item in result.Data)
                 Console.WriteLine("You are in course: " + item.courseTitle);
 
             // Example of error handling
-            var errorResult = await RWTHMoodleClient.Api.RESTClient.MoodleGetEnrolledCourseById(-1);
+            var errorResult = await auxua.RWTHMoodleClient.Api.RESTClient.MoodleGetEnrolledCourseById(-1);
             // Checking for Error
             if (errorResult.IsError)
                 Console.WriteLine(errorResult.StatusInfo);

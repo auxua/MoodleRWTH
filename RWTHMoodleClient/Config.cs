@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RWTHMoodleClient
+namespace auxua.RWTHMoodleClient
 {
     /// <summary>
     /// Central Configuration

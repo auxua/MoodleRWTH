@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace RWTHMoodleClient.Api
+namespace auxua.RWTHMoodleClient.Api
 {
     /// <summary>
     /// Contains Generic and API Rest Calls

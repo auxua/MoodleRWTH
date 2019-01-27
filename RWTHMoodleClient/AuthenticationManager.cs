@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace RWTHMoodleClient
+namespace auxua.RWTHMoodleClient
 {
     /// <summary>
     /// The Authentication Management for the API
