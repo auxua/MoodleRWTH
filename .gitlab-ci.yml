@@ -1,0 +1,11 @@
+stages:
+  - build
+build:
+  stage: build
+  script:
+  - echo "Release build..."
+  - '"dotnet build" -c Release *.sln"'
+  artifacts:
+    paths:
+      - RWTHMoodleClient/bin/Release/
+      - RWTHMoodleExample/bin/Release/
