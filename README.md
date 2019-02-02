@@ -20,6 +20,10 @@ This project consists of two sub-projects:
 
 * A .Net Core (C# 7.1) example of the usage of the Client
 * Authentication, Enrollment Listing and Error Handling
+ 
+## CI Pipeline
+
+[![pipeline status](https://git.rwth-aachen.de/auxua/rwthmoodleclient/badges/master/pipeline.svg)](https://git.rwth-aachen.de/auxua/rwthmoodleclient/commits/master)
 
 # How to use?
 
