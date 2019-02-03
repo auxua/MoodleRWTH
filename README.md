@@ -5,6 +5,8 @@ The good old RWTH eLearning System (L²P) is succeeded by the RWTH Moodle system
 
 To use this Client, you will need a Developer Client ID from ITC of RWTH Aachen University.
 
+[This Client is available via nuget.org: auxua.RWTHMoodleClient](https://www.nuget.org/packages/auxua.RWTHMoodleClient/)
+
 # Technical
 This project consists of two sub-projects:
 
