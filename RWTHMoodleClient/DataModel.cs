@@ -96,7 +96,7 @@ namespace auxua.RWTHMoodleClient
 
     public class MoodleGetFilesResponse : MoodleBaseResponse
     {
-        public MoodleFileListInfo Data { get; set; }
+        public List<MoodleFileListInfo> Data { get; set; }
     }
 
     public class MoodleCourseInfo
