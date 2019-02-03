@@ -18,6 +18,7 @@ Currently, the API only supports
     <PackageLicenseUrl>https://github.com/auxua/MoodleRWTH/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/auxua/MoodleRWTH</PackageProjectUrl>
     <PackageId>auxua.RWTHMoodleClient</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
